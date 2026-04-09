@@ -6,8 +6,6 @@ In this assignment, we defined the Situation, Intent, Value, and Capabilities of
 
 # 2. Artifact
 
-File: artifact-1-situation-intent.md
-
 The artifact describes the Fellowship’s current situation after leaving Rivendell, where information is incomplete and constantly changing.
 
 It defines the purpose of the system as a shared communication and alignment tool, helping members exchange critical information like routes, threats, and plans in a structured way.
