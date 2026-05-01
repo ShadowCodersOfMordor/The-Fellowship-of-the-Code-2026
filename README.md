@@ -3,6 +3,7 @@
 
 - [Chapter I: Setting Out](chapters/chapter-1-setting-out.md)
 - [Chapter II: Paths & Choices](/chapters/chapter-2-paths-choices.md)
+- [Chapter III: Representation](chapters/chapter-3-representation.md)
 
 ## Changelog
 - Added Chapter III – Representation
