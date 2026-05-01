@@ -5,7 +5,7 @@
 - [Chapter II: Paths & Choices](/chapters/chapter-2-paths-choices.md)
 
 ## Changelog
-
+- Added Artifact 3 – Representation
 - Added Chapter II: Paths & Choices
 - Added Artifact 2: Decision-making (Information Clarification and Alignment)
 - Extended system with structured ambiguity resolution capability
