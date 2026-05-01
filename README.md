@@ -5,6 +5,7 @@
 - [Chapter II: Paths & Choices](/chapters/chapter-2-paths-choices.md)
 
 ## Changelog
+- Added Chapter III – Representation
 - Static HTML + CSS implementation of the wireframe
 - Added Artifact III – Representation
 - Added Chapter II: Paths & Choices
