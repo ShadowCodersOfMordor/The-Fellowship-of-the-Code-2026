@@ -34,3 +34,6 @@ However, the final structure and decisions were adapted to match the assignment 
 This assignment showed how interface structure can represent system logic even without interactive behavior.
 
 We learned that semantic HTML and clear layout help communicate the purpose of an interface effectively.
+
+## Artifact
+[Artifact 3 – Representation](../artifacts/artifact-3/artifact-3-representation.md)
