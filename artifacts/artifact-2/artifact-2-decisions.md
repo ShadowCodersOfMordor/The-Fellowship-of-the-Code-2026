@@ -46,7 +46,7 @@ The wireframe represents a structured group communication interface with four pr
 - Displays the updated or clarified message from the original sender
 - Indicates that the clarification has been addressed
 - Returns the message to a stable shared state
-Wireframe: see [`/artifacts/artifact-2/src/decisions.wireframe.png`](src/decisions.wireframe.png)
+Wireframe: see [`/artifacts/artifact-2/src/decisions.png`](src/decisions.png)
 
 # Design Rationale
 The design structures how communication, ambiguity, and clarification are handled within a distributed group operating under uncertainty.
