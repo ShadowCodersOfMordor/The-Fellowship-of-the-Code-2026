@@ -1,71 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Fellowship Companion</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<header>
-<h1>Fellowship Companion</h1>
+<header class="app-header">
+<div class="header-content">
+<div>
+<p class="eyebrow">Fellowship Companion</p>
+<h1>Shared Group Communication</h1>
+<p class="subtitle">
+         Create updates, review received messages, and request clarification when information is unclear.
+</p>
+</div>
+<div class="status-pill">Static Interface</div>
+</div>
 </header>
-
-<main>
-
-<section class="message">
-<h2>Shared Message</h2>
-
+<main class="layout">
+<section class="card create-card">
+<div class="card-header">
+<span class="step">1</span>
+<div>
+<h2>Create Message</h2>
+<p>Publish a new update to the shared group feed.</p>
+</div>
+</div>
+<form class="message-form">
+<label for="message">Message</label>
+<textarea id="message" placeholder="Write a group update..." readonly></textarea>
+<button type="button">Send to Group</button>
+<p class="helper-text">Messages are published to all Fellowship members.</p>
+</form>
+</section>
+<section class="card feed-card">
+<div class="card-header">
+<span class="step">2</span>
+<div>
+<h2>Shared Group Feed</h2>
+<p>Review received information and decide whether it is clear.</p>
+</div>
+</div>
+<article class="message-card">
+<div class="message-topline">
+<div>
+<strong>Legolas</strong>
+<span>2 min ago</span>
+</div>
+<span class="badge shared">Shared</span>
+</div>
 <p class="message-text">
-Path ahead is clear through the forest.
+         The path ahead is clear through the forest.
 </p>
-
-<p class="author">
-— Legolas
-</p>
-
 <div class="actions">
-<button>Got it</button>
-<button class="warning">Flag as unclear</button>
+<button type="button" class="secondary">Understood</button>
+<button type="button" class="outline">Request Clarification</button>
 </div>
-
+</article>
 </section>
-
-<section class="clarification">
-
-<h2>Needs Clarification</h2>
-
-<p><strong>Message:</strong> Path ahead is clear</p>
-<p><strong>Flagged by:</strong> Frodo</p>
-
-<h3>Interpretations</h3>
-
-<ul>
-<li>Aragorn: Clear but slow terrain</li>
-<li>Gimli: Not safe, signs of orcs</li>
-</ul>
-
-<div class="actions">
-<button>Add interpretation</button>
-<button>Confirm interpretation</button>
+<section class="card clarification-card">
+<div class="card-header">
+<span class="step">3</span>
+<div>
+<h2>Clarification Request</h2>
+<p>Unclear information is routed back to the original sender.</p>
 </div>
-
+</div>
+<div class="detail-box">
+<p class="label">Original message</p>
+<p>The path ahead is clear through the forest.</p>
+</div>
+<div class="info-grid">
+<div>
+<p class="label">Requested by</p>
+<p>Frodo</p>
+</div>
+<div>
+<p class="label">Sent to</p>
+<p>Original sender: Legolas</p>
+</div>
+</div>
+<div class="detail-box">
+<p class="label">Question</p>
+<p>What does “clear” mean? Safe, or only passable?</p>
+</div>
+<span class="badge waiting">Waiting for clarification</span>
 </section>
-
-<section class="resolved">
-
-<h2>Resolved</h2>
-
-<p>Path is passable but risk of orcs.</p>
-
-<p class="author">
-Confirmed by: Aragorn
+<section class="card clarified-card">
+<div class="card-header">
+<span class="step">4</span>
+<div>
+<h2>Clarified Message</h2>
+<p>The updated message becomes visible to the group.</p>
+</div>
+</div>
+<article class="message-card success-card">
+<div class="message-topline">
+<div>
+<strong>Legolas</strong>
+<span>Updated just now</span>
+</div>
+<span class="badge clarified">Clarified</span>
+</div>
+<p class="message-text">
+         The path is passable, but there may be signs of orcs. Move carefully and stay together.
 </p>
-
+<div class="actions">
+<button type="button" class="secondary">Understood</button>
+</div>
+</article>
 </section>
-
 </main>
-
 </body>
 </html>
