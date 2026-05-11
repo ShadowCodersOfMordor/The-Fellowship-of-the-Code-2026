@@ -1,7 +1,4 @@
 <>
-# Artifact 2 – Deciding
-## The Fellowship Companion
----
 # Selected System Capability
 ## Information Clarification and Alignment
 # Capability Description
@@ -11,12 +8,15 @@ Instead of resolving ambiguity automatically, the system routes clarification re
 The capability focuses on improving shared understanding and reducing misunderstandings during communication under uncertain conditions.
 ---
 # Why this capability?
-This capability directly addresses one of the Fellowship’s core risks: acting on conflicting or misunderstood information. In uncertain and hostile environments, even small misinterpretations (e.g., route safety, enemy sightings) can lead to severe consequences.
+This capability directly addresses one of the Fellowship’s core risks: acting on conflicting or misunderstood information.
+In uncertain and hostile environments, even small misinterpretations (e.g., route safety or enemy sightings) can lead to severe consequences.
 Structuring how ambiguity is handled ensures that the group does not act on unstable or misaligned understanding.
 ---
 # Why is it meaningful at this stage of the journey?
-At the early-to-mid journey stage, the Fellowship is no longer operating with shared initial knowledge from Rivendell. Information becomes fragmented, and interpretations diverge.
-Before making critical decisions, the group must align on what is actually true. This capability ensures that misunderstandings are surfaced and clarified explicitly before action is taken.
+At the early-to-mid journey stage, the Fellowship is no longer operating with shared initial knowledge from Rivendell.
+Information becomes fragmented, and interpretations diverge.
+Before making critical decisions, the group must align on what is actually true.
+This capability ensures that misunderstandings are surfaced and clarified explicitly before action is taken.
 ---
 # Flow Design
 The flow models how information is created, shared, reviewed, and clarified within the Fellowship.
