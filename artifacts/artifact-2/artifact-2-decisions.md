@@ -25,7 +25,7 @@ This capability ensures that misunderstandings are surfaced and clarified explic
 The flow models how information is created, shared, reviewed, and clarified within the Fellowship.
 It highlights key user actions such as creating messages, reviewing received information, requesting clarification, and publishing clarified updates back to the shared group feed.
 The flow ensures that communication remains structured while keeping ambiguity visible and manageable.
-Full flow: see [`artifacts/artifact-2/src/decisions.mermaid.md`]
+Full flow: see [`artifacts/artifact-2/src/decisions.mermaid.md`](src/decisions.mermaid.md)
 
 # Interface Design (Wireframe)
 The wireframe represents a structured group communication interface with four primary interaction states.
