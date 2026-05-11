@@ -1,6 +1,6 @@
 <>
 ## The Fellowship Companion
----
+
 # Selected System Capability
 ## Information Clarification and Alignment
 # Capability Description
@@ -10,27 +10,23 @@ Instead of resolving ambiguity automatically, the system routes clarification re
 The sender can then provide a clearer version of the information, which becomes visible to the group as an updated message.
 The capability focuses on improving shared understanding and reducing misunderstandings during communication under uncertain conditions.
 
----
 # Why this capability?
 This capability directly addresses one of the Fellowship’s core risks: acting on conflicting or misunderstood information.
 In uncertain and hostile environments, even small misinterpretations such as route safety or enemy sightings can lead to severe consequences.
 Structuring how ambiguity is handled ensures that the group does not act on unstable or misaligned understanding.
 
----
 # Why is it meaningful at this stage of the journey?
 At the early-to-mid journey stage, the Fellowship is no longer operating with shared initial knowledge from Rivendell.
 Information becomes fragmented, and interpretations diverge.
 Before making critical decisions, the group must align on what is actually true.
 This capability ensures that misunderstandings are surfaced and clarified explicitly before action is taken.
 
----
 # Flow Design
 The flow models how information is created, shared, reviewed, and clarified within the Fellowship.
 It highlights key user actions such as creating messages, reviewing received information, requesting clarification, and publishing clarified updates back to the shared group feed.
 The flow ensures that communication remains structured while keeping ambiguity visible and manageable.
 Full flow: see `/artifacts/artifact-2/src/decisions.mermaid.md`
 
----
 # Interface Design (Wireframe)
 The wireframe represents a structured group communication interface with four primary interaction states.
 ## 1. Message Creation
@@ -51,7 +47,7 @@ The wireframe represents a structured group communication interface with four pr
 - Indicates that the clarification has been addressed
 - Returns the message to a stable shared state
 Wireframe: see `/artifacts/artifact-2/src/decisions.wireframe.png`
----
+
 # Design Rationale
 The design structures how communication, ambiguity, and clarification are handled within a distributed group operating under uncertainty.
 Instead of allowing unclear information to persist implicitly, the system introduces explicit communication states that make uncertainty visible before action is taken.
