@@ -49,20 +49,32 @@ function markAsUnderstood() {
 
 function requestClarification() {
   clarificationSection.classList.remove("hidden");
+  clarifiedSection.classList.add("hidden");
+
   originalMessageText.textContent = state.currentMessage;
   state.feedStatus = "needs clarification";
+
+  messageBadge.textContent = "Needs Clarification";
+  messageBadge.className = "badge waiting";
+
   updateStatus("Needs Clarification");
 }
 
 function publishClarification(clarification) {
   state.clarifiedMessage = clarification;
+  state.currentMessage = clarification;
   state.feedStatus = "clarified";
+
+  messageText.textContent = clarification;
+
+  messageBadge.textContent = "Clarified";
+  messageBadge.className = "badge clarified";
 
   clarifiedSection.classList.remove("hidden");
   clarifiedMessageText.textContent = clarification;
 
-  messageBadge.textContent = "Clarification Requested";
-  messageBadge.className = "badge waiting";
+  clarificationSection.classList.add("hidden");
+  clarificationInput.value = "";
 
   updateStatus("Clarified Message Published");
 }
@@ -80,6 +92,7 @@ messageForm.addEventListener("submit", function (event) {
 
   messageError.textContent = "";
   state.currentMessage = message;
+  state.clarifiedMessage = "";
   state.feedStatus = "shared";
 
   showSharedMessage(message);
@@ -118,10 +131,9 @@ clarificationForm.addEventListener("submit", function (event) {
 
   clarificationError.textContent = "";
   publishClarification(clarification);
-
-  clarificationInput.value = "";
 });
 
 finalUnderstoodButton.addEventListener("click", function () {
+  markAsUnderstood();
   updateStatus("Clarified Message Understood");
 });
