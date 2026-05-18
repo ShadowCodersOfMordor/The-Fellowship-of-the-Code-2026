@@ -1,12 +1,10 @@
 # The Red Book of Westmarch - Chapter II: Paths & Choices
 
-> "Even the smallest person can change the course of the future." – Galadriel
-
----
-
 ## Table of Contents
-- [The Red Book of Westmarch - Chapter II: Paths & Choices](#the-red-book-of-westmarch---chapter-ii-paths-choices)
+
+- [The Red Book of Westmarch - Chapter II: Paths & Choices](#the-red-book-of-westmarch---chapter-ii-paths--choices)
   - [Summary](#summary)
+  - [Learning Outcomes](#learning-outcomes)
   - [Artifact](#artifact)
   - [AI Assistance](#ai-assistance)
   - [Lessons Learned](#lessons-learned)
@@ -26,8 +24,8 @@ This chapter demonstrates how ambiguity is transformed into a visible and manage
 ## Learning Outcomes
 
 - Understand how to design systems for **decision-making under uncertainty**
-- Apply **structured interaction design** (states, flows, constraints)
-- Translate abstract risks into **concrete system capabilities**
+- Apply **structured interaction design** through states, flows, and constraints
+- Translate abstract risks into concrete **system capabilities**
 - Reflect on **AI-assisted design and reasoning**
 - Contribute to a **coherent and evolving system architecture**
 
@@ -35,56 +33,65 @@ This chapter demonstrates how ambiguity is transformed into a visible and manage
 
 ## Artifact
 
-**File:** [Artifact 2 – Decisions](/artifacts/artifact-2/artifact-2-decisions.md)
+File: [Artifact 2 – Decisions](../artifacts/artifact-2/artifact-2-decisions.md)
 
-### Build:
+Build:
+
 - Capability definition document
-- Mermaid flow (`src/decisions.mermaid.md`)
-- Wireframe (`src/decisions.png`)
+- Mermaid flow: [decisions.mermaid.md](../artifacts/artifact-2/src/decisions.mermaid.md)
+- Wireframe: [decisions.png](../artifacts/artifact-2/src/decisions.png)
 - Structured system states and transitions
 
-### Focus:
+Focus:
+
 The artifact introduces a system that:
+
 - Flags unclear or conflicting messages
 - Collects structured interpretations
 - Forces convergence to a shared understanding before action
 
-### Key Concept:
-The system does not resolve ambiguity automatically—it ensures ambiguity is **visible, structured, and explicitly resolved**.
+Key Concept:
+
+The system does not resolve ambiguity automatically — it ensures ambiguity is **visible, structured, and explicitly resolved**.
 
 ---
 
 ## AI Assistance
 
 ### What did I expect?
+
 We expected AI to help generate structured documentation and assist in refining system design ideas.
 
 ### What actually happened?
-AI was helpful in organizing thoughts and improving clarity, but it sometimes suggested overly complex or unrealistic features (e.g., automation or decision-making logic that violated project constraints).
+
+AI was helpful in organizing thoughts and improving clarity, but it sometimes suggested overly complex or unrealistic features, for example automation or decision-making logic that violated project constraints.
 
 ### How did AI help or mislead me?
-- **Helped:** Structuring the capability description, improving wording, and refining explanations  
-- **Misled:** Occasionally introduced solutions that assumed perfect information or automation, which contradicts the system’s purpose  
+
+- **Helped:** Structuring the capability description, improving wording, and refining explanations
+- **Misled:** Occasionally introduced solutions that assumed perfect information or automation, which contradicts the system’s purpose
 
 ### What decisions did I make consciously?
-- Removed automated conflict resolution features  
-- Avoided voting/ranking systems to prevent false certainty  
-- Focused strictly on **state transitions (flag → interpret → resolve)**  
-- Kept interactions minimal and structured  
+
+- Removed automated conflict resolution features
+- Avoided voting/ranking systems to prevent false certainty
+- Focused strictly on state transitions: **flag → interpret → resolve**
+- Kept interactions minimal and structured
 
 ### What would I do differently next time?
-- Provide clearer constraints to AI earlier  
-- Iterate faster between AI suggestions and manual refinement  
-- Use AI more as a **critical assistant**, not a solution generator  
+
+- Provide clearer constraints to AI earlier
+- Iterate faster between AI suggestions and manual refinement
+- Use AI more as a critical assistant, not a solution generator
 
 ---
 
 ## Lessons Learned
 
-- **Clarity is more valuable than quantity of information** in uncertain environments  
-- Systems should **expose ambiguity**, not hide it  
-- Structured interactions reduce cognitive load and miscommunication  
-- Good design often comes from **what you choose to exclude**  
-- AI is powerful for iteration, but **human judgment is essential for constraints and final decisions**  
+- **Clarity is more valuable than quantity of information** in uncertain environments
+- Systems should expose **ambiguity**, not hide it
+- Structured interactions reduce cognitive load and miscommunication
+- Good design often comes from what you choose to exclude
+- AI is powerful for iteration, but **human judgment is essential for constraints and final decisions**
 
-This chapter reinforced that effective systems do not eliminate uncertainty—they make it manageable and visible, enabling better collective decisions.
+This chapter reinforced that effective systems do not eliminate uncertainty — they make it manageable and visible, enabling better collective decisions.
