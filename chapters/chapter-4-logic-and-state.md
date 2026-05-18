@@ -1,48 +1,101 @@
-# Chapter IV: Logic and State
+# The Red Book of Westmarch - Chapter IV: Logic & State
+
+## Table of Contents
+
+- [The Red Book of Westmarch - Chapter IV: Logic & State](#the-red-book-of-westmarch---chapter-iv-logic--state)
+  - [Summary](#summary)
+  - [Artifact](#artifact)
+  - [AI Assistance](#ai-assistance)
+  - [Lessons Learned](#lessons-learned)
+
+---
 
 ## Summary
 
-In this phase we extended the static interface from Assignment 3 with JavaScript logic and state.
+This chapter focuses on adding logic and state to the existing Fellowship Companion interface.
 
-The goal was not to redesign the interface or add new features, but to make the existing communication flow functional. The interface now reacts to user input, updates its visible state, and supports message sharing, clarification requests, and clarified messages.
+In the previous artifact, the interface only represented the communication and clarification process visually. In this phase, the same interface was extended with JavaScript so that it reacts to user interaction, stores the current message state, and updates the visible interface based on user actions.
+
+The implemented system capability is **Information Clarification and Alignment**.
+
+The interface now allows a user to:
+
+- write and send a group message
+- view the message in the shared group feed
+- mark a message as understood
+- request clarification when a message is unclear
+- publish a clarified version of the message
+- request clarification again if the clarified message is still not clear
+
+### Learning Outcomes
+
+- Understand the relationship between state, logic, and UI
+- Apply plain JavaScript to control interface behavior
+- Connect user actions to visible interface changes
+- Reflect on how logic constraints shape interaction
+- Keep the implementation aligned with the original system capability
+
+---
 
 ## Artifact
 
-Artifact 4 implements the capability **Information Clarification and Alignment** with interactive behavior.
+File: [Artifact 4 - Logic & State](../artifacts/artifact-4/artifact-4-logic-state.md)
 
-Files included:
+Build:
 
-- [interface.html](../artifacts/artifact-4/src/interface.html)
-- [style.css](../artifacts/artifact-4/src/style.css)
-- [logic.js](../artifacts/artifact-4/src/logic.js)
+- [HTML interface](../artifacts/artifact-4/src/interface.html)
+- [CSS styling](../artifacts/artifact-4/src/style.css)
+- [JavaScript logic](../artifacts/artifact-4/src/logic.js)
 
-The implementation uses explicit interface states:
+Focus:
 
-1. Empty feed
-2. Message shared
-3. Message understood
-4. Needs clarification
-5. Clarified message published
-6. Clarified message understood
+The artifact focuses on turning the static representation from Artifact 3 into a functional interface. The visual design was not redesigned or expanded. Instead, the main focus was on adding behavior, state changes, and interaction logic.
 
-These states correspond to the communication flow designed in Artifact 2 and the interface structure represented in Artifact 3.
+The JavaScript implementation introduces explicit state variables that store the current message, the clarified message, and the current status of the interface. These state values determine which sections are visible and how the interface responds after each user action.
 
-The JavaScript handles user interactions such as sending a message, requesting clarification, publishing a clarified message, and marking a message as understood.
+The main interaction flow is:
+
+1. A user writes a message and sends it to the group.
+2. The message appears in the shared group feed.
+3. The message can be marked as understood.
+4. If the message is unclear, a clarification can be requested.
+5. The original sender can publish a clarified message.
+6. The clarified message can also be marked as understood or sent back for further clarification.
+
+This supports the original concept because the interface does not only display communication, but also manages uncertainty and clarification within the group.
+
+---
 
 ## AI Assistance
 
-AI tools helped with structuring the JavaScript logic, identifying useful state variables, and connecting the existing HTML elements to user interactions.
+AI was used to support the development of the JavaScript logic and to improve the connection between the static interface and the required behavior.
 
-AI also helped refine the implementation so that it stayed within the assignment constraints: no backend, no external libraries, no persistence, and no redesign of the interface.
+At first, the interface already existed as an HTML and CSS representation. The main challenge was to decide how the page should behave once JavaScript was added. AI helped by suggesting a clear state-based structure for the interaction.
 
-However, the final behavior was adapted to match our project logic. In particular, we adjusted the clarification flow so that a clarified message can still be questioned again if it remains unclear.
+The AI assistance helped with:
+
+- identifying the necessary state variables
+- connecting buttons to user actions
+- showing and hiding interface sections
+- validating empty input fields
+- updating status labels and badges
+- keeping the clarified message process reusable
+- ensuring that clarification can be requested again after a clarified message is published
+
+However, the final decisions were adapted to fit the original assignment scope. No external libraries, backend, persistence, or additional features were added. The implementation stays focused on the selected system capability and uses only plain HTML, CSS, and JavaScript.
+
+One important design decision was to allow the **Request Clarification** action not only on the first shared message, but also on the clarified message. This was added because a clarified response may still be unclear to the receiver. Therefore, the logic supports repeated clarification instead of ending the process too early.
+
+---
 
 ## Lessons Learned
 
-This assignment showed how interface behavior depends on state.
+This assignment showed that interface design is not only about how something looks, but also about how it behaves.
 
-We learned that even a simple static interface needs clear state variables once it becomes interactive. The system must know whether the feed is empty, whether a message has been shared, whether clarification is needed, and whether a clarified message has been published.
+The most important lesson was that state is necessary for an interface to feel functional. Without JavaScript, the page could show the communication process, but it could not react to user input. By adding state variables, the interface can remember whether a message has been sent, whether clarification is needed, and whether a clarified message has been published.
 
-We also learned that JavaScript should not add unnecessary complexity. Its purpose in this artifact is to express the existing communication logic clearly and make the interface behave according to the previously designed flow.
+Another important lesson was that logic should follow the original concept and not create unnecessary new features. The task was not to redesign the interface, but to make the existing capability work. Because of this, the implementation stayed close to the original wireframe and static representation.
 
-[Artifact 4 – Logic and State](../artifacts/artifact-4/artifact-4-logic-state.md)
+The clarification process also showed that interaction flows are often not strictly linear. A user may still not understand a message after it has been clarified. For that reason, the final clarified message also includes the option to request clarification again.
+
+Overall, this chapter helped connect concept, representation, and execution. The Fellowship Companion now demonstrates how a shared communication interface can support group alignment by making unclear information visible, actionable, and revisable.
