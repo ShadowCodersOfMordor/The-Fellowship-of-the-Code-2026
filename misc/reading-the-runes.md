@@ -165,10 +165,14 @@ eatButton.addEventListener("click", () => {
 
 ## 5. AI Assistance Reflection
 
-I used AI to help me understand the code and identify logic problems.
+## 5. AI Assistance Reflection
 
-It was helpful because it explained why the code runs without syntax errors but still behaves incorrectly. The most helpful part was the explanation that JavaScript input values are often treated as strings. This helped me understand why adding rations could produce a result like `105` instead of `15`.
+## 5. AI Assistance Reflection
 
-However, AI assistance was not enough on its own. I still had to look at the code myself and decide which issues were actually important for the assignment. The main focus was not only fixing the code, but explaining what was wrong, why it matters, and what changed.
+We used AI to help us understand the code and identify logic problems.
 
-I also had to decide how detailed the explanation should be. The assignment asks for understanding and reasoning, not only for a corrected version of the code. Therefore, I focused on explaining the problems in the logic and the possible effect on the user experience.
+It was helpful because it explained why the code runs without syntax errors but still behaves incorrectly. The most helpful part was the explanation that JavaScript input values are often treated as strings. This helped us understand why adding rations could produce a result like `105` instead of `15`.
+
+However, AI assistance was not enough on its own. We still had to look at the code ourselves and decide which issues were actually important for the assignment. The main focus was not only fixing the code, but explaining what was wrong, why it matters, and what changed.
+
+We also had to decide how detailed the explanation should be. The assignment asks for understanding and reasoning, not only for a corrected version of the code. Therefore, we focused on explaining the problems in the logic and the possible effect on the user experience.
