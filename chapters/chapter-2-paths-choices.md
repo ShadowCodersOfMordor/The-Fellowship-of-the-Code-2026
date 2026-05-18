@@ -5,11 +5,11 @@
 ---
 
 ## Table of Contents
-- Summary
-- Learning Outcomes
-- Artifact
-- AI Assistance
-- Lessons Learned
+- [The Red Book of Westmarch - Chapter II: Paths & Choices](#the-red-book-of-westmarch---chapter-ii-paths-choices)
+  - [Summary](#summary)
+  - [Artifact](#artifact)
+  - [AI Assistance](#ai-assistance)
+  - [Lessons Learned](#lessons-learned)
 
 ---
 
