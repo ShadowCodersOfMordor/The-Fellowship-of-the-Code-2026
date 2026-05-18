@@ -30,6 +30,6 @@ By making uncertainty visible and allowing users to request clarification, the s
 
 The implementation is stored in the following files:
 
-- [interface.html](./interface.html)
-- [style.css](./style.css)
-- [logic.js](./logic.js)
+- [interface.html](./src/interface.html)
+- [style.css](./src/style.css)
+- [logic.js](./src/logic.js)
