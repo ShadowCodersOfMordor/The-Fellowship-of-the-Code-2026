@@ -25,6 +25,7 @@ const clarificationError = document.getElementById("clarificationError");
 const clarifiedSection = document.getElementById("clarifiedSection");
 const clarifiedMessageText = document.getElementById("clarifiedMessageText");
 const finalUnderstoodButton = document.getElementById("finalUnderstoodButton");
+const finalClarificationButton = document.getElementById("finalClarificationButton");
 
 const statusPill = document.getElementById("statusPill");
 
@@ -35,9 +36,14 @@ function updateStatus(text) {
 function showSharedMessage(message) {
   feedEmpty.classList.add("hidden");
   messageCard.classList.remove("hidden");
+
   messageText.textContent = message;
   messageBadge.textContent = "Shared";
   messageBadge.className = "badge shared";
+
+  clarificationSection.classList.add("hidden");
+  clarifiedSection.classList.add("hidden");
+
   updateStatus("Message Shared");
 }
 
@@ -52,10 +58,13 @@ function requestClarification() {
   clarifiedSection.classList.add("hidden");
 
   originalMessageText.textContent = state.currentMessage;
+
   state.feedStatus = "needs clarification";
 
   messageBadge.textContent = "Needs Clarification";
   messageBadge.className = "badge waiting";
+
+  messageCard.classList.remove("hidden");
 
   updateStatus("Needs Clarification");
 }
@@ -65,16 +74,13 @@ function publishClarification(clarification) {
   state.currentMessage = clarification;
   state.feedStatus = "clarified";
 
-  messageText.textContent = clarification;
-
-  messageBadge.textContent = "Clarified";
-  messageBadge.className = "badge clarified";
-
-  clarifiedSection.classList.remove("hidden");
   clarifiedMessageText.textContent = clarification;
 
   clarificationSection.classList.add("hidden");
   clarificationInput.value = "";
+
+  messageCard.classList.add("hidden");
+  clarifiedSection.classList.remove("hidden");
 
   updateStatus("Clarified Message Published");
 }
@@ -91,6 +97,7 @@ messageForm.addEventListener("submit", function (event) {
   }
 
   messageError.textContent = "";
+
   state.currentMessage = message;
   state.clarifiedMessage = "";
   state.feedStatus = "shared";
@@ -98,8 +105,6 @@ messageForm.addEventListener("submit", function (event) {
   showSharedMessage(message);
 
   messageInput.value = "";
-  clarificationSection.classList.add("hidden");
-  clarifiedSection.classList.add("hidden");
 });
 
 understoodButton.addEventListener("click", function () {
@@ -134,6 +139,9 @@ clarificationForm.addEventListener("submit", function (event) {
 });
 
 finalUnderstoodButton.addEventListener("click", function () {
-  markAsUnderstood();
   updateStatus("Clarified Message Understood");
+});
+
+finalClarificationButton.addEventListener("click", function () {
+  requestClarification();
 });
