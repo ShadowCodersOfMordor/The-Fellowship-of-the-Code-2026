@@ -1,10 +1,24 @@
-# Chapter I: Setting out
+# The Red Book of Westmarch - Chapter I: Setting Out
 
-# 1. Summary
+## Table of Contents
+
+- [The Red Book of Westmarch - Chapter I: Setting Out](#the-red-book-of-westmarch---chapter-i-setting-out)
+  - [Summary](#summary)
+  - [Artifact](#artifact)
+  - [AI Assistance](#ai-assistance)
+  - [Lessons Learned](#lessons-learned)
+
+---
+
+## Summary
 
 In this assignment, we defined the Situation, Intent, Value, and Capabilities of the Fellowship Companion, focusing on how the Fellowship communicates and makes decisions under uncertainty.
 
-# 2. Artifact
+---
+
+## Artifact
+
+File: [Artifact 1 – Situation & Intent](../artifacts/artifact-1/artifact-1-situation-intent.md)
 
 The artifact describes the Fellowship’s current situation after leaving Rivendell, where information is incomplete and constantly changing.
 
@@ -12,14 +26,16 @@ It defines the purpose of the system as a shared communication and alignment too
 
 Additionally, it outlines key system capabilities such as:
 
-structured information sharing
-maintaining a shared communication context
-resolving misunderstandings
-prioritizing critical information
+- structured information sharing
+- maintaining a shared communication context
+- resolving misunderstandings
+- prioritizing critical information
 
 Overall, the artifact explains how the system improves coordination and reduces risks caused by miscommunication.
 
-# 3. AI Assistance
+---
+
+## AI Assistance
 
 We used AI mainly to help with structuring our ideas, improving wording, and translating parts into clearer English.
 
@@ -29,13 +45,15 @@ However, some suggestions from AI were too generic or abstract. We had to adjust
 
 The ideas themselves were developed by us, while AI supported us in shaping and improving them.
 
-# 4. Lessons Learned
+---
+
+## Lessons Learned
 
 We realized that defining a system at a conceptual level is harder than expected. It is easy to be too vague or too complex at the same time.
 
 We learned that clarity is more important than complexity, especially when describing intent and capabilities.
 
-It also helped to think in concrete situations (like missing or conflicting information) instead of abstract ideas.
+It also helped to think in concrete situations, like missing or conflicting information, instead of abstract ideas.
 
 Finally, we understood that a good system definition is not about features, but about what problem is actually being solved and why it matters.
 
