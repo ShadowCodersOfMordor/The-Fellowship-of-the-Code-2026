@@ -162,11 +162,6 @@ eatButton.addEventListener("click", () => {
 ```
 
 ---
-
-## 5. AI Assistance Reflection
-
-## 5. AI Assistance Reflection
-
 ## 5. AI Assistance Reflection
 
 We used AI to help us understand the code and identify logic problems.
