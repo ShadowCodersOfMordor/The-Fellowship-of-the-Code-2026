@@ -4,7 +4,7 @@
 - [Chapter I: Setting Out](chapters/chapter-1-setting-out.md)
 - [Chapter II: Paths & Choices](/chapters/chapter-2-paths-choices.md)
 - [Chapter III: Representation](chapters/chapter-3-representation.md)
-
+- [Chapter IV: Representation](chapters/chapter-4-logic-and-state.md)
 ## Changelog
 - Created /chapters folder
 - Linked Chapter 1 to Artifact 1 (Situation & Intent)
