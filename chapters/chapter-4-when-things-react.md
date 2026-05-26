@@ -1,8 +1,8 @@
-# The Red Book of Westmarch - Chapter IV: Logic & State
+# The Red Book of Westmarch - Chapter IV: When Things React
 
 ## Table of Contents
 
-- [The Red Book of Westmarch - Chapter IV: Logic & State](#the-red-book-of-westmarch---chapter-iv-logic--state)
+- [The Red Book of Westmarch - Chapter IV: When Things React](#the-red-book-of-westmarch---chapter-iv-when-things-react)
   - [Summary](#summary)
   - [Artifact](#artifact)
   - [AI Assistance](#ai-assistance)
