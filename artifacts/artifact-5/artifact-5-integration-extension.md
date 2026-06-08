@@ -32,7 +32,7 @@ The flow shows how message creation, priority assessment, clarification requests
 
 The updated wireframe is available here:
 
-[System Wireframe](src/wireframe.png)
+[System Wireframe](src/wireframe-system.png)
 
 The wireframe introduces a priority selection during message creation, displays the selected priority within the shared group feed, and shows timestamps for shared and clarified messages.
 
