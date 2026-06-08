@@ -32,7 +32,7 @@ The flow shows how message creation, priority assessment, clarification requests
 
 The updated wireframe is available here:
 
-[System Wireframe](src/wireframe-system.png)
+[System Wireframe](src/wireframe.png)
 
 The wireframe introduces a priority selection during message creation, displays the selected priority within the shared group feed, and shows timestamps for shared and clarified messages.
 
@@ -61,3 +61,66 @@ Moment.js is included in the HTML file before the project’s own JavaScript fil
 ```html
 <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
 <script src="logic.js"></script>
+```
+
+The JavaScript logic uses Moment.js to create the current message time:
+
+```javascript
+function getCurrentTime() {
+  return moment().format("HH:mm");
+}
+```
+
+This affects the meaning of the system because the time of a message helps users evaluate how recent and relevant information is. In the context of the Fellowship, a warning about danger or movement may become less reliable over time.
+
+---
+
+## Design Rationale
+
+The original purpose of the Fellowship Companion is to support communication alignment among group members.
+
+Priority Assessment strengthens this purpose because not all messages have the same urgency. By allowing users to assign a priority level, important information becomes easier to identify and process.
+
+The timestamp extension also supports the original system intent. Information in uncertain environments is time-sensitive. A message about danger, movement, or route safety may be useful when it is recent, but less reliable later.
+
+The new capability integrates naturally with the existing workflow:
+
+1. A user creates a message.
+2. A priority level is selected.
+3. A timestamp is created using Moment.js.
+4. The message is shared with the group.
+5. Group members can mark the message as understood or request clarification.
+6. Clarified messages preserve their assigned priority and receive an updated timestamp.
+
+This ensures that important and time-sensitive information remains visible throughout the communication process.
+
+The system intentionally does not implement automatic prioritisation, notifications, escalation rules, advanced filtering, persistent storage, or real-time multi-user communication. Priority is assigned manually by the sender, and timestamps are generated locally in the browser.
+
+---
+
+## AI Assistance
+
+AI assistance was used to:
+
+- Generate implementation ideas for the Priority Assessment capability.
+- Refine the integrated system flow.
+- Review and improve the HTML, CSS, and JavaScript implementation.
+- Identify Moment.js as a simple external library for meaningful timestamps.
+- Support the creation of documentation and reflection text.
+- Validate consistency between the system flow, wireframe, and implementation.
+
+All final design decisions and implementation choices were reviewed and adapted manually.
+
+---
+
+## Lessons Learned
+
+This chapter demonstrated how new functionality can be integrated into an existing system without changing its core purpose.
+
+The introduction of Priority Assessment showed that even a relatively small capability can influence multiple aspects of a software system, including user interaction, interface design, state management, and documentation.
+
+The use of Moment.js showed how an external library can extend the meaning of a system without adding unnecessary complexity. The system now touches something outside its own handwritten code while still remaining understandable and lightweight.
+
+Another important lesson was the need for consistency between system flow, wireframe, and implementation. Each artifact should represent the same behaviour to ensure a coherent system design.
+
+Overall, the extension improved the usefulness of the Fellowship Companion while preserving its original goal of supporting shared communication and information alignment.
