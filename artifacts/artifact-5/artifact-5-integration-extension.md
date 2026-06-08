@@ -96,31 +96,3 @@ This ensures that important and time-sensitive information remains visible throu
 
 The system intentionally does not implement automatic prioritisation, notifications, escalation rules, advanced filtering, persistent storage, or real-time multi-user communication. Priority is assigned manually by the sender, and timestamps are generated locally in the browser.
 
----
-
-## AI Assistance
-
-AI assistance was used to:
-
-- Generate implementation ideas for the Priority Assessment capability.
-- Refine the integrated system flow.
-- Review and improve the HTML, CSS, and JavaScript implementation.
-- Identify Moment.js as a simple external library for meaningful timestamps.
-- Support the creation of documentation and reflection text.
-- Validate consistency between the system flow, wireframe, and implementation.
-
-All final design decisions and implementation choices were reviewed and adapted manually.
-
----
-
-## Lessons Learned
-
-This chapter demonstrated how new functionality can be integrated into an existing system without changing its core purpose.
-
-The introduction of Priority Assessment showed that even a relatively small capability can influence multiple aspects of a software system, including user interaction, interface design, state management, and documentation.
-
-The use of Moment.js showed how an external library can extend the meaning of a system without adding unnecessary complexity. The system now touches something outside its own handwritten code while still remaining understandable and lightweight.
-
-Another important lesson was the need for consistency between system flow, wireframe, and implementation. Each artifact should represent the same behaviour to ensure a coherent system design.
-
-Overall, the extension improved the usefulness of the Fellowship Companion while preserving its original goal of supporting shared communication and information alignment.
