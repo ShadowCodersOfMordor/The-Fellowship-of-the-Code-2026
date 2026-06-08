@@ -1,4 +1,4 @@
-# Chapter 5 – Integration & Extension
+# Chapter V – Integration & Extension
 
 ## Summary
 
@@ -16,36 +16,37 @@ The chapter also demonstrates how the different parts of the system connect thro
 
 Users can now classify a message as either **Normal Priority** or **High Priority** before publishing it to the shared group feed. This helps group members identify urgent information and focus on important messages first.
 
+---
+
 ### System Flow
 
-The integrated system flow is documented in:
+The integrated system flow is available here:
 
-`src/flowchart-system.mermaid.md`
+[System Flow](src/flowchart-system.mermaid.md)
 
-The flow shows how message creation, clarification requests, clarification publishing, message understanding, and priority assessment interact within a single workflow.
+The flow shows how message creation, priority assessment, clarification requests, clarification publishing, and message understanding interact within a single workflow.
+
+---
 
 ### Wireframe
 
-The updated wireframe is stored in:
+The updated wireframe is available here:
 
-`src/wireframe-system.png`
+[System Wireframe](src/wireframe-system.png)
 
-The wireframe introduces a priority selection during message creation and displays the selected priority inside the shared group feed and clarified message view.
+The wireframe introduces a priority selection during message creation and displays the selected priority within the shared group feed and clarified message view.
+
+---
 
 ### Implementation Snapshot
 
-The implementation consists of:
+Implementation files:
 
-* `src/interface.html`
-* `src/style.css`
-* `src/logic.js`
+- [HTML Interface](src/interface.html)
+- [CSS Styling](src/style.css)
+- [JavaScript Logic](src/logic.js)
 
-The extension adds:
-
-* Priority selection controls during message creation
-* Priority badges for shared messages
-* Priority badges for clarified messages
-* Additional state management for message priority
+The implementation extends the original Fellowship Companion by introducing Priority Assessment as an additional capability within the communication process.
 
 ---
 
@@ -58,14 +59,14 @@ Priority Assessment strengthens this purpose because not all messages have the s
 The new capability integrates naturally with the existing workflow:
 
 1. A user creates a message.
-2. The user selects a priority level.
+2. A priority level is selected.
 3. The message is shared with the group.
 4. Group members can mark the message as understood or request clarification.
-5. Clarified messages preserve their original priority level.
+5. Clarified messages preserve their assigned priority.
 
 This ensures that important information remains visible throughout the complete communication process.
 
-The system intentionally does not perform automatic prioritisation, notification delivery, or escalation. Priority is assigned manually by the sender to keep the implementation simple and aligned with the scope of the project.
+The system intentionally does not implement automatic prioritisation, notifications, escalation rules, or advanced filtering. Priority is assigned manually by the sender to keep the implementation lightweight and aligned with the project scope.
 
 ---
 
@@ -73,13 +74,13 @@ The system intentionally does not perform automatic prioritisation, notification
 
 AI assistance was used to:
 
-* Generate implementation ideas for the Priority Assessment capability.
-* Refine the system flow and identify integration points.
-* Review the HTML, CSS, and JavaScript implementation.
-* Support the creation of documentation and reflection text.
-* Validate consistency between the system flow, wireframe, and implementation.
+- Generate implementation ideas for the Priority Assessment capability.
+- Refine the integrated system flow.
+- Review and improve the HTML, CSS, and JavaScript implementation.
+- Support the creation of documentation and reflection text.
+- Validate consistency between the system flow, wireframe, and implementation.
 
-All design decisions, integration choices, and final implementation details were reviewed and adjusted manually.
+All final design decisions and implementation choices were reviewed and adapted manually.
 
 ---
 
@@ -87,9 +88,8 @@ All design decisions, integration choices, and final implementation details were
 
 This chapter demonstrated how new functionality can be integrated into an existing system without changing its core purpose.
 
-The introduction of Priority Assessment showed that even a relatively small capability can affect multiple parts of a system, including user interaction, system state, interface design, and documentation.
+The introduction of Priority Assessment showed that even a relatively small capability can influence multiple aspects of a software system, including user interaction, interface design, state management, and documentation.
 
-Another important lesson was the value of maintaining consistency between the system flow, wireframe, and implementation. Each artifact should represent the same behaviour to avoid misunderstandings during development and review.
+Another important lesson was the need for consistency between system flow, wireframe, and implementation. Each artifact should represent the same behaviour to ensure a coherent system design.
 
-Overall, the extension improved the usefulness of the Fellowship Companion while preserving its original focus on shared communication and information alignment.
-
+Overall, the extension improved the usefulness of the Fellowship Companion while preserving its original goal of supporting shared communication and information alignment.
