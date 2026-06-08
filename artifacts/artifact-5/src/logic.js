@@ -2,7 +2,9 @@ const state = {
   currentMessage: "",
   clarifiedMessage: "",
   feedStatus: "empty",
-  priority: "normal"
+  priority: "normal",
+  messageTime: "",
+  clarifiedMessageTime: ""
 };
 
 const messageForm = document.getElementById("messageForm");
@@ -13,6 +15,7 @@ const feedEmpty = document.getElementById("feedEmpty");
 const messageCard = document.getElementById("messageCard");
 const messageText = document.getElementById("messageText");
 const messageBadge = document.getElementById("messageBadge");
+const messageTime = document.getElementById("messageTime");
 const priorityBadge = document.getElementById("priorityBadge");
 const clarifiedPriorityBadge = document.getElementById("clarifiedPriorityBadge");
 
@@ -27,6 +30,7 @@ const clarificationError = document.getElementById("clarificationError");
 
 const clarifiedSection = document.getElementById("clarifiedSection");
 const clarifiedMessageText = document.getElementById("clarifiedMessageText");
+const clarifiedMessageTime = document.getElementById("clarifiedMessageTime");
 const finalUnderstoodButton = document.getElementById("finalUnderstoodButton");
 const finalClarificationButton = document.getElementById("finalClarificationButton");
 
@@ -34,6 +38,10 @@ const statusPill = document.getElementById("statusPill");
 
 function updateStatus(text) {
   statusPill.textContent = `State: ${text}`;
+}
+
+function getCurrentTime() {
+  return moment().format("HH:mm");
 }
 
 function getSelectedPriority() {
@@ -56,6 +64,8 @@ function showSharedMessage(message) {
   messageCard.classList.remove("hidden");
 
   messageText.textContent = message;
+  messageTime.textContent = state.messageTime;
+
   messageBadge.textContent = "Shared";
   messageBadge.className = "badge shared";
   updatePriorityBadge(priorityBadge);
@@ -93,8 +103,10 @@ function publishClarification(clarification) {
   state.clarifiedMessage = clarification;
   state.currentMessage = clarification;
   state.feedStatus = "clarified";
+  state.clarifiedMessageTime = getCurrentTime();
 
   clarifiedMessageText.textContent = clarification;
+  clarifiedMessageTime.textContent = state.clarifiedMessageTime;
   updatePriorityBadge(clarifiedPriorityBadge);
 
   clarificationSection.classList.add("hidden");
@@ -123,6 +135,7 @@ messageForm.addEventListener("submit", function (event) {
   state.clarifiedMessage = "";
   state.feedStatus = "shared";
   state.priority = getSelectedPriority();
+  state.messageTime = getCurrentTime();
 
   showSharedMessage(message);
 
