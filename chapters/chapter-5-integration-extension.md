@@ -1,4 +1,4 @@
-# The Red Book of Westmarch – Chapter V: Integration & Extension
+# The Red Book of Westmarch – Chapter V: The Tale Continues
 
 ## Table of Contents
 
