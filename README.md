@@ -6,7 +6,7 @@
 - [Chapter II: Paths & Choices](chapters/chapter-2-paths-choices.md)
 - [Chapter III: Representation](chapters/chapter-3-representation.md)
 - [Chapter IV: When Things React](chapters/chapter-4-when-things-react.md)
-- [Chapter V: Integration & Extension](chapters/chapter-5-integration-extension.md)
+- [Chapter V: The Tale Continues](chapters/chapter-5-the-tale-continues.md)
 ## Changelog
 
 - Created /chapters folder
@@ -32,7 +32,7 @@
 - Extended interface with message priority selection
 - Integrated Moment.js for dynamic timestamps
 - Connected communication, clarification, and priority workflows
-- Added Chapter V: Integration & Extension
+- Added Chapter V: The Tale Continues
 
 
 
