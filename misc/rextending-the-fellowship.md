@@ -71,8 +71,69 @@ The solution shows how a simple form submission can trigger a series of automate
 <img width="1161" height="550" alt="image" src="https://github.com/user-attachments/assets/c9fe1785-1e36-4e51-9fd6-4a28d8b60dca" />
 
 
+
+
 #### Generated Quest Log Email
 <img width="882" height="477" alt="image" src="https://github.com/user-attachments/assets/686a428d-9d83-4c19-92e8-dc84bd91deb3" />
+
+# Task 2 – The Ring Bearer
+
+## Description
+
+For the low-code application task, we created a small game using Microsoft MakeCode Arcade called **The Ring Bearer**.
+
+The game is inspired by *The Lord of the Rings*. The player takes control of Frodo, whose objective is to carry the One Ring to Mount Doom and destroy it. The game takes place in a simplified version of Mordor, represented by a dark volcanic environment.
+
+## Gameplay
+
+The player controls Frodo using the keyboard arrow keys. A Mount Doom sprite is placed on the map and serves as the final objective.
+
+An Orc enemy is also present on the map. The Orc continuously follows Frodo and acts as an obstacle. The player must avoid the Orc while navigating toward Mount Doom.
+
+The game contains two possible outcomes:
+
+### Victory Condition
+
+* Frodo reaches Mount Doom.
+* The Ring is destroyed.
+* The game ends with a victory screen.
+
+### Failure Condition
+
+* The Orc touches Frodo.
+* The Ring is captured.
+* The game ends with a game over screen.
+
+## Implementation
+
+The game was created using the visual block-based editor provided by Microsoft MakeCode Arcade.
+
+The following components were implemented:
+
+* A player character representing Frodo.
+* Player movement using keyboard controls.
+* A goal object representing Mount Doom.
+* An Orc enemy that follows the player.
+* Collision detection between game objects.
+* A win condition when Frodo reaches Mount Doom.
+* A lose condition when Frodo is caught by the Orc.
+
+The game logic was implemented using MakeCode Arcade blocks rather than traditional programming.
+
+## Technologies Used
+
+* Microsoft MakeCode Arcade
+* Block-based visual programming
+
+## Reflection
+
+This exercise provided practical experience with low-code development tools and demonstrated how interactive applications can be created with minimal setup and very little traditional coding.
+
+The project showed how sprites, player controls, events, collision detection, and simple game logic can be combined to create a complete gameplay loop. While the game is intentionally simple, it successfully demonstrates the core concepts of game development and event-driven programming in a visual environment.
+
+## Game Link
+
+https://arcade.makecode.com/S13350-03113-86524-77378
 
 
 
